@@ -86,8 +86,8 @@
                         <div class="col-md-4 mx-auto">
                             <div class="form" id="form">
                                 <h2 class="text-center text-white fw-bold fs-2 mb-3">Apply Now</h2>
-                                <form>
-                                    <input class="form-control   font_style" type="name" name="name" id="name"
+                               <form action="connect.php"   method="GET">
+                                    <input class="form-control text-white   font_style" type="name" name="name" id="name"
                                     placeholder="Applicant Name" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|
                                 \x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)
                                 (\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|
@@ -97,11 +97,11 @@
                                 x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" required
                                     style="height: 55px;border: none;
                                 border-bottom: 2px solid grey !important;">
-                                   <input class="form-control  font_style " type="email" name="email"
+                                   <input class="form-control text-white  font_style " type="email" name="email"
                                    id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                    required
                                    style="height: 55px; border: none ;border-bottom: 2px solid grey !important; ">
-                                   <input class="form-control  font_style" type="tel" name="contact"
+                                   <input class="form-control text-white  font_style" type="tel" name="contact"
                                             id="number" placeholder="Mobile Number" minlength="8" maxlength="10"
                                             pattern="[6-9]{1}[0-9]{9}"
                                             style="height: 55px; border: none; border-bottom: 2px solid grey !important;">
@@ -110,7 +110,7 @@
 
                                     <input type="hidden" name="analytics" id="analytics1" />
                                     
-                                    <textarea class="form-control" placeholder="Comment"></textarea>
+                                    <textarea class="form-control text-white" placeholder="Comment"></textarea>
                                     <div class=" mt-2 ">
                                         <button class="btn w-100 btn-lg text-white py-3 proceed_btn" 
                                             type="submit">Proceed</button>
@@ -350,6 +350,9 @@
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            document.getElementById("analytics1").value = window.location.href;
+        </script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <!-- <script src="lib/easing/easing.min.js"></script> -->
         <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script>
