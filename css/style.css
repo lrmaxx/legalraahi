@@ -243,18 +243,20 @@ a:focus {
     position: relative;
     margin-left: 15px;
     padding: 12px 20px 10px 20px;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 700;
     text-transform: uppercase;
-    color: #00539C;
+    color: #0c0c0c;
     border: none;
     border-radius: 5px;
-    background: #ffffff;
+    background: #f1f1f1;
     transition: .3s;
+
 }
 
 .header .navbar .btn:hover {
     color: #000000;
-    background: #FFD662;
+    background: #fac229;
 }
 
 .header .navbar .btn i {
@@ -265,11 +267,14 @@ a:focus {
 @media (max-width: 992px) {
     .header .navbar {
         border-radius: 5px;
+        padding: 8px;
+        
+    }
+
+    .header .navbar .btn {
+      margin: auto;
     }
     
-    .header .navbar .btn {
-        display: none;
-    }
 }
 
 .header .hero {
